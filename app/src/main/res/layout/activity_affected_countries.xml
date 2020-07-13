@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF9F9"
+    tools:context=".AffectedCountries">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/edit_search"
+        android:layout_margin="10dp"
+        android:maxLines="1"
+        android:background="@drawable/edittext_shadow"
+        android:singleLine="true"
+        android:paddingLeft="20dp"
+        android:drawablePadding="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="Search Country"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/search_black"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+
+        android:layout_height="fill_parent"
+        android:id="@+id/list_view"
+        android:layout_below="@+id/search"></ListView>
+
+        <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+            android:id="@+id/google_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:layout_centerInParent="true" />
+
+
+
+</RelativeLayout>
